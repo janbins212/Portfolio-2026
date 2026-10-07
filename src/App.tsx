@@ -89,7 +89,7 @@ const projectFeatures = [
 
 const creativeItems: CreativeItem[] = [
   {
-    category: 'Creative Work',
+    category: 'Graphic Design Samples',
     title: 'Creative work 01',
     description: 'A selected image from the creative work collection.',
     style: 'graphic',
@@ -97,7 +97,7 @@ const creativeItems: CreativeItem[] = [
     media: creativeMedia.image1,
   },
   {
-    category: 'Creative Work',
+    category: 'Graphic Design Samples',
     title: 'Creative work 02',
     description: 'A selected image from the creative work collection.',
     style: 'logo',
@@ -105,7 +105,7 @@ const creativeItems: CreativeItem[] = [
     media: creativeMedia.image2,
   },
   {
-    category: 'Creative Work',
+    category: 'Graphic Design Samples',
     title: 'Creative work 03',
     description: 'A selected image from the creative work collection.',
     style: 'social',
@@ -129,7 +129,7 @@ const creativeItems: CreativeItem[] = [
     media: creativeMedia.video2,
   },
   {
-    category: 'Video Editing',
+    category: 'Podcast Shorts',
     title: 'Video 03',
     description: 'A selected video from the creative work collection.',
     style: 'video',
@@ -137,7 +137,7 @@ const creativeItems: CreativeItem[] = [
     media: creativeMedia.video3,
   },
   {
-    category: 'Video Editing',
+    category: 'Podcast Shorts',
     title: 'Video 04',
     description: 'A selected video from the creative work collection.',
     style: 'video',
