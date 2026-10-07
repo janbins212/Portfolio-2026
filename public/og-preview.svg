@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#101316"/>
+  <path d="M0 480h1200M850 0v630" stroke="#2a3135"/>
+  <circle cx="920" cy="160" r="190" stroke="#263338"/>
+  <circle cx="920" cy="160" r="130" stroke="#263338"/>
+  <path d="M820 126c0-22 44-40 100-40s100 18 100 40-44 40-100 40-100-18-100-40Z" stroke="#68D9E5" stroke-width="3"/>
+  <path d="M820 126v80c0 22 44 40 100 40s100-18 100-40v-80M820 206v80c0 22 44 40 100 40s100-18 100-40v-80" stroke="#68D9E5" stroke-width="3"/>
+  <text x="96" y="226" fill="#68D9E5" font-family="monospace" font-size="18" letter-spacing="3">PORTFOLIO / 2025</text>
+  <text x="96" y="328" fill="#f2f4f4" font-family="Arial, sans-serif" font-size="66" font-weight="700">John Benzh P. Cuy</text>
+  <text x="96" y="385" fill="#aab4b8" font-family="Arial, sans-serif" font-size="28">Creative IT Professional &amp; Database Systems Specialist</text>
+  <text x="96" y="544" fill="#aab4b8" font-family="monospace" font-size="15">DATABASES  /  DEVELOPMENT  /  CREATIVE TECHNOLOGY</text>
+</svg>

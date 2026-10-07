@@ -1,0 +1,91 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Portfolio: install and build",
+			"type": "shell",
+			"command": "npm install; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; npm run build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Portfolio: check Node.js",
+			"type": "shell",
+			"command": "Get-Command node.exe,npm.cmd -ErrorAction SilentlyContinue | Select-Object Name,Source; @('C:\\Program Files\\nodejs\\node.exe', \"$env:APPDATA\\npm\\npm.cmd\", \"$env:LOCALAPPDATA\\Programs\\nodejs\\node.exe\") | ForEach-Object { if (Test-Path $_) { $_ } }",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Portfolio: locate Node.js",
+			"type": "shell",
+			"command": "Get-Command node.exe,npm.cmd -ErrorAction SilentlyContinue | Select-Object Name,Source; Test-Path 'C:\\Program Files\\nodejs\\node.exe'; Test-Path (Join-Path $env:LOCALAPPDATA 'Programs\\nodejs\\node.exe')",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Portfolio: check package installer",
+			"type": "shell",
+			"command": "Get-Command winget.exe -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Portfolio: install Node.js LTS",
+			"type": "shell",
+			"command": "winget install --id OpenJS.NodeJS.LTS --scope user --silent --accept-source-agreements --accept-package-agreements",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Portfolio: locate installed Node.js",
+			"type": "shell",
+			"command": "$roots = @((Join-Path $env:LOCALAPPDATA 'Programs\\nodejs'), (Join-Path $env:LOCALAPPDATA 'Microsoft\\WinGet\\Packages')); foreach ($root in $roots) { if (Test-Path $root) { Get-ChildItem $root -Filter node.exe -Recurse -ErrorAction SilentlyContinue | Select-Object -First 3 -ExpandProperty FullName } }; Get-Command node.exe,npm.cmd -ErrorAction SilentlyContinue | Select-Object Name,Source",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Portfolio: verify Node installation",
+			"type": "shell",
+			"command": "Write-Output \"ProgramFilesNode=$(Test-Path 'C:\\Program Files\\nodejs\\node.exe')\"; Write-Output \"UserNode=$(Test-Path (Join-Path $env:LOCALAPPDATA 'Programs\\nodejs\\node.exe'))\"; winget list --id OpenJS.NodeJS.LTS",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Portfolio: find Node binaries",
+			"type": "shell",
+			"command": "Get-ChildItem (Join-Path $env:LOCALAPPDATA 'Microsoft\\WinGet') -Filter node.exe -Recurse -File -ErrorAction SilentlyContinue | Select-Object -First 5 -ExpandProperty FullName",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Portfolio: build with local Node",
+			"type": "shell",
+			"command": "& 'C:\\Users\\Jambeans\\AppData\\Local\\Microsoft\\WinGet\\Packages\\OpenJS.NodeJS.LTS_Microsoft.Winget.Source_8wekyb3d8bbwe\\node-v24.19.0-win-x64\\npm.cmd' install; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; & 'C:\\Users\\Jambeans\\AppData\\Local\\Microsoft\\WinGet\\Packages\\OpenJS.NodeJS.LTS_Microsoft.Winget.Source_8wekyb3d8bbwe\\node-v24.19.0-win-x64\\npm.cmd' run build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Portfolio: build with Node PATH",
+			"type": "shell",
+			"command": "$nodeDir = 'C:\\Users\\Jambeans\\AppData\\Local\\Microsoft\\WinGet\\Packages\\OpenJS.NodeJS.LTS_Microsoft.Winget.Source_8wekyb3d8bbwe\\node-v24.19.0-win-x64'; $env:PATH = \"$nodeDir;$env:PATH\"; npm.cmd install; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; npm.cmd run build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Portfolio: dev server",
+			"type": "shell",
+			"command": "$nodeDir = 'C:\\Users\\Jambeans\\AppData\\Local\\Microsoft\\WinGet\\Packages\\OpenJS.NodeJS.LTS_Microsoft.Winget.Source_8wekyb3d8bbwe\\node-v24.19.0-win-x64'; $env:PATH = \"$nodeDir;$env:PATH\"; npm.cmd run dev -- --host 127.0.0.1",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}

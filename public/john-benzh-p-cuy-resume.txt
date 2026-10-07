@@ -1,0 +1,34 @@
+JOHN BENZH P. CUY
+Creative IT Professional & Database Systems Specialist
+Philippines
+
+PROFILE
+Cum Laude BS Information Technology graduate majoring in Database Systems. Hands-on project and internship experience in database development, web technologies, technical support, graphic design, content creation, and system analysis. Analytical, detail-oriented, and ready to learn and adapt to new technologies.
+
+EDUCATION
+Bachelor of Science in Information Technology, Major in Database Systems
+Mindanao State University at Naawan | 2020–2025
+Cum Laude
+
+EXPERIENCE
+Creative IT Intern | ITech Media Logic
+El Salvador City, Misamis Oriental | February 2025–May 2025
+- Created social media content and promotional materials for IT services.
+- Supported graphic design, logo design, and system branding work.
+- Assisted with basic technical support, PC maintenance, and hardware checks.
+- Contributed to digital marketing-related activities and content preparation.
+
+SELECTED PROJECT
+Items Management System (IMS) | Lugait Senior High School Supply Office
+Developed to improve management, monitoring, requesting, releasing, and reporting of school supply items. Features include item and supplier management, request and release transactions, availability monitoring, reports, transaction history, audit records, notifications, dashboard analytics, and search.
+Technology: Laravel, PHP, MySQL, jQuery, XAMPP
+GitHub: https://github.com/janbins212/IMSLUGAIT
+
+SKILLS
+Database & Data: SQL, MySQL, Database Design, Relational Database Concepts, Data Management
+Development: PHP / Laravel, JavaScript, HTML / CSS, Python, jQuery, Git / GitHub
+IT & Technical Support: PC Maintenance, Hardware Troubleshooting, Basic Technical Support, System Analysis, Software Troubleshooting
+Creative & Digital: Graphic Design, Logo Design, Content Creation, Social Media Content, Video Editing, Canva, CapCut, Filmora
+
+GITHUB
+https://github.com/janbins212
